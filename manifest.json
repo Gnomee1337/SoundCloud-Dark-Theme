@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "SoundCloud Dark Theme",
+  "version": "1.0",
+  "description": "Toggle Dark Theme for SoundCloud",
+  "permissions": ["storage", "activeTab"],
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "action": {
+    "default_popup": "extension-ui/extension-ui.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://soundcloud.com/*"],
+      "js": ["js/content.js"]
+    }
+  ],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "web_accessible_resources": [
+    {
+      "resources": ["css/dark-theme.css"],
+      "matches": ["*://soundcloud.com/*"]
+    }
+  ]
+}

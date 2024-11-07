@@ -1,0 +1,99 @@
+/* Apply dark theme styles when the 'dark-theme' class is added to <body> */
+
+/* General background and text color for dark theme */
+body.dark-theme {
+  background-color: #181818 !important;
+  color: #FFFFFF !important;
+  font-family: Arial, sans-serif;
+}
+
+/* Adjust header and control button colors */
+body.dark-theme .header,
+body.dark-theme .playControls,
+body.dark-theme .sc-button,
+body.dark-theme .sc-button-icon,
+body.dark-theme .sc-link-light {
+  color: #BBBBBB !important;
+}
+
+/* Hover effects for buttons and controls */
+body.dark-theme .sc-button:hover,
+body.dark-theme .sc-button-icon:hover {
+  background-color: #444444 !important;
+}
+
+/* Background color for various list items and content */
+body.dark-theme .soundList__item,
+body.dark-theme .sound__body,
+body.dark-theme .searchItem__title {
+  background-color: #282828 !important;
+}
+
+/* Input fields and textareas */
+body.dark-theme input,
+body.dark-theme textarea {
+  background-color: #333333 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #555555 !important;
+}
+
+/* Links */
+body.dark-theme a {
+  color: #BB86FC !important;
+  text-decoration: none;
+}
+
+/* Add hover effect for links */
+body.dark-theme a:hover {
+  color: #6200EE !important;
+  text-decoration: underline;
+}
+
+/* Adjust colors for specific icons and controls */
+body.dark-theme .sc-icon {
+  fill: #BBBBBB !important;
+}
+
+/* Lighten color of text inside buttons for better contrast */
+body.dark-theme .sc-button-label {
+  color: #DDDDDD !important;
+}
+
+/* Add a soft dark shadow to content for better depth */
+body.dark-theme .sound__body,
+body.dark-theme .sc-button {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Adjust background color for modal or pop-up elements */
+body.dark-theme .modal-content,
+body.dark-theme .popup {
+  background-color: #222222 !important;
+  color: #FFFFFF !important;
+}
+
+/* Add hover effects for clickable elements like buttons and cards */
+body.dark-theme .soundList__item:hover {
+  background-color: #444444 !important;
+}
+
+/* Ensure text fields and form controls are easier to read */
+body.dark-theme input:focus,
+body.dark-theme textarea:focus {
+  border-color: #BB86FC !important;
+  outline: none !important;
+}
+
+/* Darken the scrollbar */
+body.dark-theme ::-webkit-scrollbar {
+  width: 12px;
+}
+
+body.dark-theme ::-webkit-scrollbar-thumb {
+  background-color: #444444;
+  border-radius: 10px;
+}
+
+body.dark-theme ::-webkit-scrollbar-thumb:hover {
+  background-color: #666666;
+}
